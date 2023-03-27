@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  awsets:
+    build: .
+    image: futureys/awsets:development
+    volumes:
+      - ~/.aws:/root/.aws
+      - ./output:/workspace/output
